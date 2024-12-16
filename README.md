@@ -46,7 +46,7 @@
 *  `docker-compose.yml` - конфигурация Docker Compose для развертывания в Docker PostgresSQL.
 *  `dockerfile` - Dockerfile для сборки образа приложения.
 
-# Обрабатываемые запросы
+### Обрабатываемые запросы
 * GET /customer/ - получение всех заказчиков
 * GET /customer/{id} - получение заказчика с указанным id
 * DELETE /customer/{id} - удаление заказчика по id(удаляются и все его заказы)

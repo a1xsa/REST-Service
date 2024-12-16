@@ -45,3 +45,16 @@
   *  `Suite` - тестовый набор для запуска всех тестов.
 *  `docker-compose.yml` - конфигурация Docker Compose для развертывания в Docker PostgresSQL.
 *  `dockerfile` - Dockerfile для сборки образа приложения.
+
+# Обрабатываемые запросы
+* GET /customer/ - получение всех заказчиков
+* GET /customer/{id} - получение заказчика с указанным id
+* DELETE /customer/{id} - удаление заказчика по id(удаляются и все его заказы)
+* POST /customer - создание заказчика
+* PUT /customer/{id} - обновление данных о заказчике
+* GET /order/ - получение всех заказов
+* GET /order/{id} - получение заказа с указанным id
+* DELETE /order/{id} - удаление заказа
+* POST /order?customer_id=? - добавление заказа с привязкой к заказчику
+* PUT /order/{id} - обновление данных о заказе
+ 

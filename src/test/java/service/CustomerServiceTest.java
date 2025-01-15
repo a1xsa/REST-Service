@@ -1,9 +1,9 @@
-package ServiceTest;
+package service;
 
 
-import DAO.CustomerDAO;
+import dao.CustomerDAO;
 
-import DTO.CustomerDTO;
+import dto.CustomerDTO;
 import exception.DatabaseException;
 import exception.DuplicateDataException;
 import exception.NotFoundException;

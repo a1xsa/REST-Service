@@ -1,12 +1,12 @@
-package DAOtest;
+package dao;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.sql.SQLException;
 import java.util.List;
 
-import DAO.CustomerDAO;
-import connectDB.DataBaseConnectionManager;
+import dao.CustomerDAO;
+import connectdb.DataBaseConnectionManager;
 import model.Customer;
 import org.junit.jupiter.api.*;
 import org.testcontainers.containers.PostgreSQLContainer;

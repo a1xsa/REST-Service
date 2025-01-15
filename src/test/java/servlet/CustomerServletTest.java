@@ -1,12 +1,11 @@
-package ServletTest;
+package servlet;
 
 
-import DTO.CustomerDTO;
+import dto.CustomerDTO;
 import com.google.gson.Gson;
 import exception.DatabaseException;
 import exception.DuplicateDataException;
 import exception.NotFoundException;
-import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.junit.jupiter.api.BeforeEach;

@@ -1,7 +1,7 @@
 package service;
 
-import DAO.OrderDAO;
-import DTO.OrderDTO;
+import dao.OrderDAO;
+import dto.OrderDTO;
 import mapper.OrderMapper;
 import exception.DatabaseException;
 import exception.NotFoundException;

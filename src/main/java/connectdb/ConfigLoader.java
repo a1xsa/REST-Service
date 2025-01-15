@@ -1,4 +1,4 @@
-package connectDB;
+package connectdb;
 
 
 import java.io.IOException;

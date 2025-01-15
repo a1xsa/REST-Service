@@ -1,7 +1,7 @@
 package servlet;
 
 
-import DTO.CustomerDTO;
+import dto.CustomerDTO;
 import com.google.gson.Gson;
 import exception.DatabaseException;
 import exception.DuplicateDataException;

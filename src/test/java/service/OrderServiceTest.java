@@ -1,8 +1,8 @@
-package ServiceTest;
+package service;
 
 
-import DAO.OrderDAO;
-import DTO.OrderDTO;
+import dao.OrderDAO;
+import dto.OrderDTO;
 import exception.DatabaseException;
 import exception.NotFoundException;
 import model.Order;

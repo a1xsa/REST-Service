@@ -1,8 +1,7 @@
-package DAO;
+package dao;
 
-import connectDB.DataBaseConnectionManager;
-import connectDB.SqlExecutor;
-import exception.NotFoundException;
+import connectdb.DataBaseConnectionManager;
+import connectdb.SqlExecutor;
 import model.Customer;
 import model.Order;
 

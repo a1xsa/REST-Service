@@ -1,7 +1,7 @@
 package service;
 
-import DAO.CustomerDAO;
-import DTO.CustomerDTO;
+import dao.CustomerDAO;
+import dto.CustomerDTO;
 
 import mapper.CustomerMapper;
 import exception.DatabaseException;

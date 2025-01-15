@@ -1,8 +1,12 @@
-package systemListener;
+package systemlistener;
 
 import jakarta.servlet.ServletContextEvent;
 import jakarta.servlet.ServletContextListener;
 import jakarta.servlet.annotation.WebListener;
+
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 
 @WebListener
 public class AppListener implements ServletContextListener {
@@ -10,7 +14,7 @@ public class AppListener implements ServletContextListener {
     public void contextInitialized(ServletContextEvent sce) {
         try {
             Class.forName("org.postgresql.Driver");
-            System.out.println("PostgreSQL Driver loaded successfully.");
+            Logger.getLogger(AppListener.class.getName()).log(Level.INFO, "PostgreSQL Driver loaded successfully.");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }

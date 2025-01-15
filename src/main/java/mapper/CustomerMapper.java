@@ -1,6 +1,6 @@
 package mapper;
 
-import DTO.CustomerDTO;
+import dto.CustomerDTO;
 import model.Customer;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
@@ -15,7 +15,6 @@ public interface CustomerMapper {
 
     List<CustomerDTO> toCustomerDTOList(List<Customer> customers);
 
-//    @Mapping(target = "orders", ignore = true)  // Если заказы не используются
     Customer toCustomer(CustomerDTO dto);
 
     List<Customer> toCustomerList(List<CustomerDTO> customers);

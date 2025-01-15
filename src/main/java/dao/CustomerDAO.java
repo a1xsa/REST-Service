@@ -1,11 +1,11 @@
-package DAO;
+package dao;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import connectDB.DataBaseConnectionManager;
-import connectDB.SqlExecutor;
+import connectdb.DataBaseConnectionManager;
+import connectdb.SqlExecutor;
 import model.Customer;
 import model.Order;
 
@@ -118,10 +118,10 @@ public class CustomerDAO {
             changedRows = statement.executeUpdate();
             return changedRows;
         } catch (SQLException e) {
-            if ("23505".equals(e.getSQLState())) {  // Код уникального ограничения
+            if ("23505".equals(e.getSQLState())) {
                 throw new IllegalStateException("A user with this email already exists");
             }
-            throw e;  // Перебросить другие ошибки
+            throw e;
         }
     }
 
@@ -135,10 +135,10 @@ public class CustomerDAO {
             rs.next();
             return rs.getInt(1);
         } catch (SQLException e) {
-            if ("23505".equals(e.getSQLState())) {  // Код уникального ограничения
+            if ("23505".equals(e.getSQLState())) {
                 throw new IllegalStateException("A user with this email already exists");
             }
-            throw e;  // Перебросить другие ошибки
+            throw e;
         }
     }
 }

@@ -1,7 +1,7 @@
-package ServletTest;
+package servlet;
 
 
-import DTO.OrderDTO;
+import dto.OrderDTO;
 import com.google.gson.Gson;
 import exception.DatabaseException;
 import exception.NotFoundException;

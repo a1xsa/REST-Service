@@ -1,6 +1,6 @@
 package mapper;
 
-import DTO.OrderDTO;
+import dto.OrderDTO;
 import model.Order;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;

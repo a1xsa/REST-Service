@@ -1,24 +1,19 @@
 package servlet;
 
-import DTO.CustomerDTO;
-import DTO.OrderDTO;
+import dto.OrderDTO;
 import com.google.gson.Gson;
 import exception.DatabaseException;
-import exception.DuplicateDataException;
 import exception.NotFoundException;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import model.Order;
-import service.CustomerService;
 import service.OrderService;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
